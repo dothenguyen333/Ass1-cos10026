@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: darkblue;
-    padding: 15px 30px;
+    padding: 10px 30px;
     color: white;
 }
 
@@ -74,7 +74,7 @@ body {
 footer {
     display: flex;
     justify-content: center;
-    padding: 15px 30px;
+    padding: 10px 30px;
     background: darkblue;
     color: white;
 }
