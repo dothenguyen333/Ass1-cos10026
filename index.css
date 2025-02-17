@@ -64,9 +64,10 @@ body {
     border-radius: 5px;
 }
 footer {
-    max-width: 1400px;
-    padding: 10px;
-    background: #007bff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: darkblue;
     color: white;
-    margin: 20px auto;
 }
