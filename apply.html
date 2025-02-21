@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Creating Web Application" />
+  <meta name="keywords"    content="HTML, CSS, JavaScript" />
+  <meta name="author"      content="Phan Minh Anh" />
+  <title>Apply Job</title>
+  <link href="apply.css" rel="stylesheet"/>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar"> 
+        <div class="text-container">
+          <div class="logo">NetGen Solutions</div>
+          <div class="motto">Your Trusted IT & Network Security Partner</div>
+      </div>
+        <ul class="nav-links">
+            <li><a href="index.html#Home">Home</a></li>
+            <li><a href="#CompanyPositions">Company Positions</a></li>
+            <li><a href="about.html#AboutUs">About Us</a></li>
+            <li><a href="apply.html#ApplyJob">Apply Job</a></li>
+            <li><a href="enhancements.html#Enhancements">Enhancements</a></li>
+        </ul>
+      </nav>
+      <section class="apply-form">
+          <h1>Apply Job</h1>
+          <p>Welcome to the <strong>Apply Job</strong> page! Here, you can submit your application for various IT & Networking <br>positions at NetGen Solutions. Please fill out the form carefully with accurate details to ensure a smooth <br>application process.</p>
+          <hr>
+          <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+          <h3>Job Reference Number</h3>
+          <select>
+              <option value="">Please select</option>
+              <option value="#2345A">2345A - Code Developer</option>
+              <option value="#1234B">1234B - Data Analyst</option>
+          </select>
+          <h3>Your Name</h3>
+          <div class="input-group">
+            <input type="text" placeholder="First Name*" required>
+            <input type="text" placeholder="Last Name*" required>
+          </div>
+          <h3>Date of Birth</h3>
+          <input type="text" id="dateInput" placeholder="DD/MM/YYYY*" pattern="\d{2}/\d{2}/\d{4}" inputmode="numeric" maxlength="10" required>
+          <fieldset>
+            <legend><h3>Gender</h3></legend>
+            <label><input type="radio" name="Gender" value="Male" required="required" />Male</label>
+            <label><input type="radio" name="Gender" value="Female" />Female</label>
+          </fieldset>
+          <h3>Street Address</h3>
+          <input type="text" placeholder="Your Street Address*" maxlength="40" required>
+          <h3>Suburb/Town</h3>
+          <input type="text" placeholder="Your Suburb/Town*" maxlength="40" required>
+          <h3>State</h3>
+          <select>
+              <option value="">Please select</option>
+              <option value="VIC">VIC - Victoria</option>
+              <option value="NSW">NSW - New South Wales</option>
+              <option value="QLD">QLD - Queenland</option>
+              <option value="NT">NT - Northern Territory</option>
+              <option value="WA">WA - Western Australia</option>
+              <option value="SA">SA - South Australia</option>
+              <option value="TAS">TAS - Tasmania</option>
+              <option value="ACT">ACT - Australian Capital Territory</option>
+          </select>
+          <h3>Postcode</h3>
+          <input type="text" id="postcode" placeholder="0000*" name="Postcode" pattern="\d{4}" maxlength="4" required>
+          <h3>Email Address</h3>
+          <input type="email" id="email" placeholder="example@gmail.com*" name="Email" required>
+          <h3>Phone Number</h3>
+          <input type="text" id="phone" placeholder="0123456789*" name="Phone" pattern="[0-9 ]{8,12}" inputmode="numeric" maxlength="12" required>
+          <fieldset>
+          <legend><h3>Skill List</h3></legend>
+          <label><input type="checkbox" id="html" name="Skills" value="HTML">HTML</label>
+          <label><input type="checkbox" id="css" name="Skills" value="CSS">CSS</label>
+          <label><input type="checkbox" id="js" name="Skills" value="JavaScript">JavaScript</label>
+          <label><input type="checkbox" id="other" name="Skills" value="Other">Other Skills...</label>
+          </fieldset>
+          <h3>Other Skills</h3>
+          <textarea id="otherSkills" name="Other Skills" rows="6" cols="30"></textarea>
+          <p>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset Form</button>
+          </p>
+          <hr>
+      </section>
+      <footer>
+        <p>&copy; 2025 NetGen Solutions Co. Limited. All rights reserved.</p>
+      </footer>
+</body>
+</html>
