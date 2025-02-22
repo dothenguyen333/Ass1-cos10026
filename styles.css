@@ -1,0 +1,53 @@
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: darkblue;
+    padding: 10px 20px;
+    color: white;
+}
+
+/* Branding container for logo and image */
+.branding {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo Image */
+.logo-image {
+    width: 50px; 
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Logo Text */
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.motto {
+    font-size: 12px;
+}
+  /*  */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px; 
+}
+/* change content*/
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: lightskyblue;
+}
