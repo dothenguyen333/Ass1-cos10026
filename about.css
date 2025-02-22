@@ -2,24 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white;
 }
-
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: darkblue;
-    padding: 10px 30px;
-    color: white;
-}
-.nav-links a.active {
-    color: lightskyblue; 
-    font-weight: bold;
-    text-decoration: underline;
-    text-shadow: 0 0 8px lightskyblue;
-}
-/* Branding container for logo and image */
 .branding {
     display: flex;
     align-items: center;
@@ -39,11 +22,45 @@ body {
 }
 
 .logo {
+    font-size: 18px;
     font-weight: bold;
 }
 
 .motto {
+    font-size: 12px;
+}
+
+.apply-form {
+    width: 50%;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+    padding: 10px 30px;
+    color: white;
+}
+
+.motto {
     font-size: 10px;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.nav-links a.active {
+    color: lightskyblue; 
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 0 0 8px lightskyblue;
 }
 
 /* Navigation Links */
@@ -67,147 +84,45 @@ body {
     color: lightskyblue;
 }
 
-section {
-    max-width: 800px;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.group-info {
+.input-group {
     display: flex;
-    justify-content: space-between; /* Pushes images to the right */
-    align-items: center;
-    background-color: #eef;
-    padding: 0px;
-    border-radius: 8px;
-    width: 100%;
+    gap: 10px;
 }
 
-/* Group Details on the left */
-.group-details {
-    flex: 1; /* Takes up most of the space */
-}
-
-.profile-images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 15px;
-    position: relative;
-    width: 380px; /* Adjust for spacing */
-    height: 370px;
-    justify-items: center;
-    align-items: center;
-}
-
-/* Make each image + name tag a flexbox */
-.profile-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-/* Larger Profile Images */
-.profile-item img {
-    width: 80px; /* Increase size */
-    height: 80px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid #333;
-}
-
-/* Name Tags */
-.profile-item p {
-    margin-top: 5px; /* Space between image & name */
-    font-size: 14px;
-    font-weight: bold;
-    color: #333;
-}
-
-/* Dr. John at the Top-Center */
-.profile-item:nth-child(1) { 
-    grid-column: 2; 
-    grid-row: 1; 
-} /* Top-center */
-
-/* Alex, Maria, James, Sarah in a No.4 Dice Face Layout */
-.profile-item:nth-child(2) { grid-column: 1; grid-row: 2; } /* Left-top */
-.profile-item:nth-child(3) { grid-column: 3; grid-row: 2; } /* Right-top */
-.profile-item:nth-child(4) { grid-column: 1; grid-row: 3; } /* Left-bottom */
-.profile-item:nth-child(5) { grid-column: 3; grid-row: 3; } /* Right-bottom */
-
-/* Styling for Images */
-.profile-images img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid #333;
-}
-
-h2 {
-    border-bottom: 2px solid darkblue;
-    padding-bottom: 5px;
-}
-
-dl {
-    background: #eef;
-    padding: 15px;
-    border-radius: 5px;
-}
-
-dt {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    padding: 5px 0;
-}
-
-figure {
-    text-align: center;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
-
-th, td {
-    border: 1px solid #ddd;
+input, textarea, select, button {
+    margin: 10px 0;
     padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
     text-align: center;
+    margin-bottom: 10px;
 }
 
-th {
-    background: darkblue;
+fieldset {
+    width: 300px;
+    padding: 10px;
+}
+
+button {
+    text-align: center;
+    background-color: darkblue;
     color: white;
+    cursor: pointer;
+    padding: 10px 15px;
 }
 
+button:hover {
+    color: lightskyblue;
+}
 
 footer {
-    text-align: center;
-    padding: 15px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 30px;
     background: darkblue;
     color: white;
-}
-dl dt {
-    color: darkblue
 }
