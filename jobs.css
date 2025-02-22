@@ -1,0 +1,75 @@
+body {
+    font-family: 'Roboto', sans-serif; 
+    line-height: 1.6; 
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: darkblue;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+h1 {
+    font: 24px 'Roboto', sans-serif; 
+    margin: 0;
+}
+
+main {
+    display: flex; 
+    padding: 20px;
+}
+
+.job-container {
+    display: flex; 
+    flex-direction: column; 
+    width: 75%; 
+    margin-right: 20px; 
+}
+
+.job-description-code-developer,
+.job-description-data-analyst {
+    background: #f9f9f9; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 15px; 
+    margin-bottom: 20px; 
+}
+
+.job-description-code-developer h2 { 
+    animation: blink 2s infinite; 
+    color: blue; 
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+aside {
+    width: 25%; 
+    background: #f4f4f4;
+    padding: 10px;
+    border: 2px solid #007BFF; 
+    border-radius: 5px; 
+    margin-top: 20px; 
+    resize: vertical; /* Allow vertical resizing */
+    overflow: auto; /* Enable scrolling if content overflows */
+}
+
+footer {
+    background: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%; 
+    font-size: 12px; 
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
