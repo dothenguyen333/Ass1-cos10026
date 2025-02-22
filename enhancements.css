@@ -3,7 +3,32 @@ body {
     margin: 0;
     padding: 0;
 }
+.branding {
+    display: flex;
+    align-items: center;
+}
 
+/* Logo Image */
+.logo-image {
+    width: 50px; /* Adjust this to match the logo size */
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Logo Text */
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.motto {
+    font-size: 12px;
+}
 .container {
     display: flex;
     justify-content: space-between;
