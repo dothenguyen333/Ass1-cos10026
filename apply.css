@@ -12,52 +12,6 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Navigation Bar */
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: darkblue;
-    padding: 10px 30px;
-    color: white;
-}
-
-.motto {
-    font-size: 10px;
-}
-
-.logo {
-    font-weight: bold;
-}
-
-.nav-links a.active {
-    color: lightskyblue; 
-    font-weight: bold;
-    text-decoration: underline;
-    text-shadow: 0 0 8px lightskyblue;
-}
-
-/* Navigation Links */
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    transition: 0.3s;
-}
-
-.nav-links a:hover {
-    color: lightskyblue;
-}
-
 .input-group {
     display: flex;
     gap: 10px;
