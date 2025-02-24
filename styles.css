@@ -12,6 +12,11 @@
     flex-direction: column;
 }
 
+.branding {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
     font-size: 18px;
     font-weight: bold;
